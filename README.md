@@ -3,6 +3,31 @@
 ## Data-Driven Logistics & Fulfillment Optimization Platform
 
 LogiFlow is a data-driven logistics optimization platform that uses historical e-commerce data to analyze delivery patterns, optimize fulfillment decisions, and generate efficient delivery routes.
+## 📊 Dataset
+
+LogiFlow uses the **Amazon Last Mile Routing Research Challenge Dataset (ALMRRC 2021)** as its primary dataset.
+
+The dataset contains historical last-mile delivery routes with route-, stop-, and package-level information, including:
+
+- Delivery stop latitude and longitude
+- Historical stop sequences
+- Transit/travel-time information
+- Vehicle capacity
+- Package information
+- Delivery time windows
+- Service time
+- Delivery station information
+- Route quality information
+
+The dataset is used to study **historical delivery patterns, route optimization, vehicle routing, and logistics performance evaluation**.
+
+### Dataset Source
+
+**Amazon Last Mile Routing Research Challenge Dataset**
+
+🔗 [Official AWS Open Data Registry](https://registry.opendata.aws/amazon-last-mile-challenges/)
+
+> **Note:** The dataset contains historical delivery data from metropolitan areas in the **United States** and is used in LogiFlow as a research/optimization dataset. It does not represent real-time delivery data.
 
 ## 📚 Research Papers & Literature Survey
 
