@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+dataset/almrrc2021-data-training/
+dataset/almrrc2021-data-evaluation/
+
+models/*.joblib
