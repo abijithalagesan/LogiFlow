@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pandas==2.3.3
+joblib
+scikit-learn==1.6.1
+ijson

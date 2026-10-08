@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: .
+    container_name: logiflow-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./dataset/almrrc2021-data-training/model_build_inputs:/app/dataset/almrrc2021-data-training/model_build_inputs
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000
+    container_name: logiflow-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
