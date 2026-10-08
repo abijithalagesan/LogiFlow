@@ -15,4 +15,4 @@ COPY src ./src
 COPY models ./models
 COPY dataset/route_features.csv ./dataset/route_features.csv
 
-CMD ["uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn backend.app:app --host 0.0.0.0 --port ${PORT:-8000}"]
